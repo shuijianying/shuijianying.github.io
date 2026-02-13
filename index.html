@@ -66,7 +66,16 @@ p {
 <p align="center">伞伞</p>
   
   <center><img src="伞萝.jpg" width="400" height="400"></center>
-  <audio src="清新爱.mp3.mp3" id="dd" autoplay controls loop></audio>
+ <audio src="清新爱.mp3.mp3" id="dd" controls loop></audio>
+<script>
+  // 获取音频元素
+  var audio = document.getElementById("dd");
+
+  // 监听整个页面的点击事件
+  document.addEventListener('click', function() {
+    audio.play(); // 用户点击后，播放音乐
+  });
+</script>
 </body>
 
 
